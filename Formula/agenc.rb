@@ -5,7 +5,7 @@
 class Agenc < Formula
   desc "AgenC - Agent orchestration system"
   homepage "https://github.com/mieubrisse/agenc"
-  version "0.4.3"
+  version "0.4.4"
   license "AGPL-3.0"
 
   depends_on "fzf"
@@ -14,16 +14,16 @@ class Agenc < Formula
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/mieubrisse/agenc/releases/download/v0.4.3/agenc_0.4.3_darwin_amd64.tar.gz"
-      sha256 "4a8555bca25cbe2bfdc689bc4571a814ca11e2d6b226d02e17473dd19ab3ac8e"
+      url "https://github.com/mieubrisse/agenc/releases/download/v0.4.4/agenc_0.4.4_darwin_amd64.tar.gz"
+      sha256 "c1da03ff371e9cc9beb70b373979bfaf8c3c49b98a358b9453209ea754c94afb"
 
       def install
         bin.install "agenc"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/mieubrisse/agenc/releases/download/v0.4.3/agenc_0.4.3_darwin_arm64.tar.gz"
-      sha256 "b1cf57d541bdfd6400ae64f8d9a19eedb4af413f5c05ee5af86edfda31150c9d"
+      url "https://github.com/mieubrisse/agenc/releases/download/v0.4.4/agenc_0.4.4_darwin_arm64.tar.gz"
+      sha256 "86076f259be4188b5b83ebb071ba8b53550c1cfc43e6a03750e3b277124bddd7"
 
       def install
         bin.install "agenc"
@@ -33,15 +33,15 @@ class Agenc < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/mieubrisse/agenc/releases/download/v0.4.3/agenc_0.4.3_linux_amd64.tar.gz"
-      sha256 "96ed9121296e14160f0b4365e20a428bc169d41f7610cb12e8c21a4fd7770a26"
+      url "https://github.com/mieubrisse/agenc/releases/download/v0.4.4/agenc_0.4.4_linux_amd64.tar.gz"
+      sha256 "0ce76a0b9a5b8fe2c1f0e19c9f23beb9c8a07472336e8f60e6945d28e4d22d2d"
       def install
         bin.install "agenc"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/mieubrisse/agenc/releases/download/v0.4.3/agenc_0.4.3_linux_arm64.tar.gz"
-      sha256 "52c9d146f872160d430451974b87321f7e5a13d319066fa63ea64a1ea6b85ff9"
+      url "https://github.com/mieubrisse/agenc/releases/download/v0.4.4/agenc_0.4.4_linux_arm64.tar.gz"
+      sha256 "37db3df8de6ad833c0a8a9324e32089d2711b1c75405d4a01572c1f2d8797b5e"
       def install
         bin.install "agenc"
       end
