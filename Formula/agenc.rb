@@ -5,7 +5,7 @@
 class Agenc < Formula
   desc "AgenC - Agent orchestration system"
   homepage "https://github.com/mieubrisse/agenc"
-  version "0.8.2"
+  version "0.9.0"
   license "AGPL-3.0"
 
   depends_on "fzf"
@@ -14,16 +14,16 @@ class Agenc < Formula
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/mieubrisse/agenc/releases/download/v0.8.2/agenc_0.8.2_darwin_amd64.tar.gz"
-      sha256 "e162a8c40d7c5bac05436331f2b456da3c285d541d4c0cbd04fee4f8344bd543"
+      url "https://github.com/mieubrisse/agenc/releases/download/v0.9.0/agenc_0.9.0_darwin_amd64.tar.gz"
+      sha256 "010db0447b2f994a09a36dabeaa281ca4cb5126bb82a336c8c9686d1e46924af"
 
       define_method(:install) do
         bin.install "agenc"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/mieubrisse/agenc/releases/download/v0.8.2/agenc_0.8.2_darwin_arm64.tar.gz"
-      sha256 "0c92045363885c56aced9ecf75ad152ac45fc4619074c4800222f89f270c3092"
+      url "https://github.com/mieubrisse/agenc/releases/download/v0.9.0/agenc_0.9.0_darwin_arm64.tar.gz"
+      sha256 "4bbb351f50156f148c06f071afb57c078c9bb8d7524b7e6026f9fdb2bc16fc66"
 
       define_method(:install) do
         bin.install "agenc"
@@ -33,15 +33,15 @@ class Agenc < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/mieubrisse/agenc/releases/download/v0.8.2/agenc_0.8.2_linux_amd64.tar.gz"
-      sha256 "7e959c98a0a8c5097b6fe8fed1a17bf35f7fbadaa739dff61ab3b55bc83b6db4"
+      url "https://github.com/mieubrisse/agenc/releases/download/v0.9.0/agenc_0.9.0_linux_amd64.tar.gz"
+      sha256 "ce5088d1a7a4452061333a4dc552b933b743302f92e68b3d13e8ba1b0f230357"
       define_method(:install) do
         bin.install "agenc"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/mieubrisse/agenc/releases/download/v0.8.2/agenc_0.8.2_linux_arm64.tar.gz"
-      sha256 "ea4cc34826c1090662f8d955fbdcd89b314fd2ab6ff9aa5b6cae3b05cbe6b92e"
+      url "https://github.com/mieubrisse/agenc/releases/download/v0.9.0/agenc_0.9.0_linux_arm64.tar.gz"
+      sha256 "dc9ef0f2386deeea0bd277cc10ef209884a62ec212a8ceeb57214ccdd84a72be"
       define_method(:install) do
         bin.install "agenc"
       end
